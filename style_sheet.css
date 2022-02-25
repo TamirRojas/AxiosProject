@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "Thunder";
+    src: local("Thunder"),
+    url(/Users/tyrro/Desktop/thunder/THUNDER/Fonts/Web-TT/Thunder-LC.woff2) format('woff2'),
+    url(/Users/tyrro/Desktop/thunder/THUNDER/Fonts/Web-TT/Thunder-LC.woff) format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Thunder";
+    src: local("Thunder"),
+    url(/Users/tyrro/Desktop/thunder/THUNDER/Fonts/Web-TT/Thunder-BoldLCItalic.woff2) format('woff2'),
+    url(/Users/tyrro/Desktop/thunder/THUNDER/Fonts/Web-TT/Thunder-BoldLCItalic.woff) format('woff');
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: "Thunder";
+    src: local("Thunder"),
+    url(/Users/tyrro/Desktop/thunder/THUNDER/Fonts/Web-TT/Thunder-BoldLC.woff2) format('woff2'),
+    url(/Users/tyrro/Desktop/thunder/THUNDER/Fonts/Web-TT/Thunder-BoldLC.woff) format('woff');
+    font-style: bold; 
+}
+
+@font-face {
+    font-family: "Thunder";
+    src: local("Thunder"),
+    url(/Users/tyrro/Desktop/thunder/THUNDER/Fonts/Web-TT/Thunder-MediumLC.woff2) format('woff2'),
+    url(/Users/tyrro/Desktop/thunder/THUNDER/Fonts/Web-TT/Thunder-MediumLC.woff) format('woff');
+    font-style: medium; 
+}
+/* hiding responsive menu */
+#topnav_hamburger_icon,
+#topnav_responsive_menu {
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    /*hiding classical menu */
+    #topnav_menu {
+        display: none;
+    }
+
+    .topnav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #home_link{
+        flex-grow: 1;
+    }
+
+    #topnav_responsive_menu ul{
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        margin: 0;
+        right: 0;
+        top: 0;
+
+        min-width:50wv;
+        height:100vh;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+.landingpage_body {
+    background-color: black;
+    width: auto;
+    max-height: 45.1em;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1.875rem 0 0 3.125rem;
+    width: 47px;
+    height: 103px;
+}
+#root_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 40px 35px 0 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.slideshow_container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 7;
+    height: 721.6px;
+}
+.outer_slide{
+    display: flex;
+    width: 33.33333333%;
+    overflow: hidden;
+    align-items: flex-end;
+}
+
+.outer_slide img{
+    object-position: 0 0;
+    width: 31.999em;
+    max-width: 100%;
+}
+
+
+.inner_slide{
+display: flex;
+width: 33.33333333%;
+object-fit: fill;
+align-items: flex-end;
+
+}
+
+.inner_slide img{
+    width: 31.999em;
+    max-width: 100%;
+}
+
+.title1 {
+    color: #eee;
+    display: flex;
+    position: absolute;
+    white-space: normal;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 13.75% 5% 13.75%
+}
+
+.title2 {
+    color: #eee;
+    display: flex;
+    position: absolute;
+    white-space: normal;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 11.75% 5% 11.75%;
+}
+
+.title3 {
+    color: #eee;
+    display: flex;
+    position: absolute;
+    white-space: normal;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 13.15% 5% 13.15%
+}
+
+/* css for "in the search of meaning" page */ 
+
+.firstpage_body {
+    background-color:#eee;
+    max-width: 96em;
+    height: 45.1em;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap !important;
+    display: flex;
+}
+
+.hero_div {
+    width: 96em;
+    height: 27em;
+    background-color:#97282c;
+}
+
+.supplementary_div {
+    height: auto;
+    width: 32em;
+    display: flex;
+    justify-content: center;
+    background-color: #97282c;
+    text-align: center;
+}
+
+.description_div {
+    display: flex;
+    height: 18.1em;
+    width: 64em;
+    margin: 0 0em 0 0;
+    background-color: #eee;
+    font-family: "Thunder";
+}
+
+.description_div span {
+    margin: 0.7em 0 0 1em;
+    height: max-content;
+    font-style: italic;
+    font-size: 60px;
+    padding: 0.1em 0.1em 0.1em 0.1em;
+}
+
+.supplementary_div span {
+    margin: 0.5em 0.5em 1em 0.5em;
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    color: #eee;
+    font-style: italic;
+    font-size:55px;
+    font-family:"Thunder"
+}
+
+.hero_title_div {
+    color: #eee;
+    display: flex;
+    white-space: normal;
+    flex-direction: column;
+    align-items: start;
+    margin: 10% 0% 0% 10%;
+    font-family: "Thunder";
+    font-style: italic;
+}
+
+.hero_title_div span{
+    font-style: italic;
+    font-size: 60px;
+}
